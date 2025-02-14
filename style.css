@@ -37,14 +37,47 @@ body {
   background: #f9f9f9;
 }
 
-.bento-grid-container {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* UI COMPONENTS */
+.create {
+  background-color: var(--clr-Yellow-100);
 }
 
-.bento-grid-item {
-  padding: 32px;
-  border: 4px solid brown;
+.content {
+  background-color: var(--clr-Yellow-500);
+}
 
+.media {
+  background-color: var(--clr-Purple-500);
+}
+
+.manage {
+  background-color: var(--clr-White);
+}
+
+.posting {
+  background-color: var(--clr-Yellow-500);
+}
+
+.schedule {
+  background-color: var(--clr-Purple-100);
+}
+
+.audience {
+  background-color: var(--clr-White);
+}
+
+.followers {
+  background-color: var(--clr-Purple-500);
+}
+
+/* LAYOUT STYLES */
+.bento-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 13rem 13rem 13rem;
+}
+
+.bento-grid-container>*,
+.inside-element {
+  display: grid;
 }

@@ -11,13 +11,39 @@
   --ff-main: "DM Sans", serif;
   --fs-body: 18px;
   --fs-heading: 32px;
-  --fw-weight: 400;
-  --fw-weight: 500;
+  --fw-400: 400;
+  --fw-500: 500;
 }
 
+/* reset */
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 80%;
+  display: block;
+}
+
+body {
+  font-family: var(--ff-main);
+  font-weight: var(--fw-400);
+  line-height: 1.1;
+  color: var(--clr-Black);
+  background: #f9f9f9;
+}
+
+.bento-grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+}
+
+.bento-grid-item {
+  padding: 32px;
+  border: 4px solid brown;
+
 }

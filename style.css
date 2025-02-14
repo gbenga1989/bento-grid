@@ -39,7 +39,8 @@ body {
 
 .bento-grid-container {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .bento-grid-item {

@@ -123,4 +123,42 @@ body {
 
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 950px) {}
+@media screen and (max-width: 950px) {
+  .bento-grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 13rem 13rem 13rem 13rem;
+    grid-template-areas:
+      'column2 column3'
+      'column2 column3'
+      'column4 column4'
+      'column1 column1'
+    ;
+  }
+
+  .column-one {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+@media screen and (max-width: 650px) {
+  .bento-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      'column2 '
+      'column3 '
+      'column4 '
+      'column1 '
+    ;
+  }
+
+
+  .inside-element,
+  .inside-element:nth-child(1),
+  .column-one {
+    grid-template-columns: 1fr;
+  }
+
+}

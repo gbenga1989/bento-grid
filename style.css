@@ -3,7 +3,7 @@
 /* roots */
 :root {
   --clr-Purple-100: #dacffc;
-  --clr-Purple-500: hsl(256, 67%, 59%);
+  --clr-Purple-500: #7650dc;
   --clr-Yellow-100: hsl(31, 66%, 93%);
   --clr-Yellow-500: hsl(39, 100%, 71%);
   --clr-White: hsl(0, 0%, 100%);
@@ -91,6 +91,11 @@ body {
   display: grid;
   gap: 1rem;
 }
+
+.bento-grid-item--element {
+  border-radius: .5rem;
+}
+
 
 .inside-element {
   grid-template-columns: 1fr 1fr;

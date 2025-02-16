@@ -194,10 +194,10 @@ h2 {
   }
 
 
-  .inside-element,
+  /* .inside-element,
   .inside-element:nth-child(1),
   .column-one {
     grid-template-columns: 1fr;
-  }
+  } */
 
 }
